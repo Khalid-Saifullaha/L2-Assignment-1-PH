@@ -53,15 +53,17 @@ console.log("Drawing square");
 const check: never = shape;
 }
 }
-####When to use:
+
+#### When to use:
+
 When you want to make sure all possible options are handled, or if something will never return.
 
 Summary in One Line
 any: Do whatever you want. TypeScript will not check. (Dangerous but easy)
 
-unknown: Accept anything, but check before using. (Safe)
+### unknown: Accept anything, but check before using. (Safe)
 
-never: This thing will never happen or never return. (Used in special cases)
+### never: This thing will never happen or never return. (Used in special cases)
 
 I hope now you can understand the difference between these three types. I tried to keep this blog easy and friendly for beginners like me.
 
@@ -73,7 +75,7 @@ When working with TypeScript, you may come across the terms union and intersecti
 
 A union type allows a variable to hold one value from multiple possible types. It gives you flexibility when a value can be of different types.
 
-Example:
+### Example:
 
 function printId(id: string | number) {
 console.log("Your ID is: " + id);
@@ -86,7 +88,7 @@ In this example, the id parameter can be either a string or a number. This is he
 What is an Intersection Type?
 An intersection type combines multiple types into one. That means the final type must include all properties from the combined types.
 
-Example:
+### Example:
 
 type Person = {
 name: string;
